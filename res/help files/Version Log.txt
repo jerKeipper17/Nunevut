@@ -1,0 +1,801 @@
+Vers. 0.001 Alpha
+May 13th, 2015
+
+Worked On: 
+  Player, NPC, Entity, Map0001, playerMovement, NPCMovement, States,
+
+Goals: 
+  Fix Player/NPC/Entity collision with Map collision, create a pause feature,
+  create map transition, create/alter collisions for battle, deletion of NPC
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  Working Player/NPC/Entity collision, Working Map collision,
+  multi-map(state), Pause, 'battle' collision
+
+Notes: 
+  Keep Player and NPC extending Entity in order to make an EntityList
+  New Circle (Player only) may be 32+16, try intersect and contain
+_____________________________________________________________________
+
+
+Vers. 0.0011 Alpha
+May 14th, 2015
+
+Worked On: 
+  Fixed Player and NPC Movement to account correctly for TileDMaps
+  Created a TimerBar to be used later in combat
+  Learned how to do easy pausing (needs to be looked at closer)
+
+Goals: 
+  make sure states actually pause 
+  create map transition, 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  multi-map(state), 
+  Pause, 
+  'battle' collision
+
+Notes: 
+  Keep Player and NPC extending Entity in order to make an EntityList
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+  Create new rectangle collisions for switching maps?
+_____________________________________________________________________
+
+
+Vers. 0.0012 Alpha
+May 15th, 2015
+
+Worked On: 
+  Deleted NPCMovement and PlayerMovement and made Movement the class used by both
+  Added a followPlayer() to Movement
+  Added Entity Collision Detection that needs to be fixed or altered
+  Created a Rectangle Collision Object
+  Tested Rect Col for warping to separate maps
+
+Goals: 
+  make sure states actually pause 
+  create map transition, 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  multi-map(state), 
+  Pause, 
+  'battle' collision
+
+Notes: 
+  Recheck map collision
+  I may need to edit the State class in order to determine position of the
+    player on the next State
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+  If you create a map class, you might be able to adjust player between maps
+_____________________________________________________________________
+
+
+Vers. 0.00125 Alpha
+May 16th, 2015
+
+Worked On: 
+   Created a MapObject class (for future GameMaps)
+   Worked on player map collision (it was not working correctly with 16 pixels)
+     It still needs completion of diagonal movement - started with up/right
+
+Goals: 
+  make sure states actually pause 
+  create map transition, 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  multi-map(state), 
+  Pause, 
+  'battle' collision
+
+Notes: 
+  Finish Diagonal map collisions for player and then implant into NPC
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+  If you create a map class, you might be able to adjust player between maps
+_____________________________________________________________________
+
+
+Vers. 0.0013 Alpha
+May 17th, 2015
+
+Worked On: 
+   Worked on Map Collisions
+   Combined movements into methods - player and computer call them
+
+Goals: 
+  make sure states actually pause 
+  create map transition, 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  multi-map(state), 
+  Pause, 
+  'battle' collision
+
+Notes: 
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+  If you create a map class, you might be able to adjust player between maps
+_____________________________________________________________________
+
+
+Vers. 0.001375 Alpha
+May 18th, 2015
+
+Worked On: 
+   Worked on Map Class
+   Created Warp Class <Circle and Rectangle Collision>
+   Still working on Warp Class
+   Found out how to use map transitions
+
+Goals: 
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  multi-map(state), 
+  Pause, 
+  'battle' collision
+
+Notes: 
+  Warp X and Y for returning player need work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+  If you create a map class, you might be able to adjust player between maps
+_____________________________________________________________________
+
+
+Vers. 0.00145 Alpha
+May 19th, 2015
+
+Worked On: 
+   Finished editing Warp class and its where it sets a player
+   Used the timerBar inside NPC to make every NPC change their actions alone
+      * This uses a list of ints to pass into the movementObject => movement style
+   Made MapObjects extend BasicGameState in order to use the fading transitions
+   Created a MapManager <the original idea for this was so I could position players on warping>
+   Created a third map and warping between each works
+      * I do have to add where I want the player to be rendered after warping, instead of old position
+   Created the start of a warp manager
+      * To be used simlar to a map manager, added to the map and used by the map manager to set start locations for player
+
+Goals: 
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  multi-map(state), 
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I might need a warping manager to keep track of warps on maps and which way to place player
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+  If you create a map class, you might be able to adjust player between maps
+_____________________________________________________________________
+
+
+Vers. 0.00175 Alpha
+May 26th, 2015
+
+Worked On: 
+   Fixed MapManager/WarpManager - warp contains the side it wants players to go to, the state id of where it goes, and the warp id inside that state it corresponds to
+   Therefore, I can warp to a map, be pointed in the right direction, and still have the fade-in/out transition
+   I am going to say a multi-map(state) is achieved, but I am adding smooth multi-state to the goals
+
+Goals: 
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+
+_____________________________________________________________________
+
+
+Vers. 0.0018 Alpha
+May 14th, 2015
+
+Worked On: 
+   Edited Map Manager so it keeps the same icon from one map to another
+      *In the process, I created a few more methods from ImageObject to Entity/Player
+   Added a background to the StartMenu
+
+Goals: 
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+
+_____________________________________________________________________
+
+
+Vers. 0.0019 Alpha
+June 4th, 2015
+
+Worked On: 
+   Made a Character class
+   Made an Equipment class
+   Made Weapon, Shield, Armor, Leggings, Boots, Helmet, Jewelry from Equipment
+   
+
+Goals: 
+  make null states for weapon,shield,armor,leggings,boots,helmet,jewelry in character
+  make weapon,shield,armor,leggings,boots,helmet,jewelry slots and affect atk,def,etc.
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+_____________________________________________________________________
+
+
+Vers. 0.002 Alpha
+August 20th, 2015
+
+Worked On: 
+  Worked on Collision detection (walls should work well, NPCs should stop if you try to move through them)
+   
+
+Goals: 
+  make null states for weapon,shield,armor,leggings,boots,helmet,jewelry in character
+  make weapon,shield,armor,leggings,boots,helmet,jewelry slots and affect atk,def,etc.
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+
+_____________________________________________________________________
+
+
+Vers. 0.0022 Alpha
+August 21th, 2015
+
+Worked On: 
+  Worked on Character class
+  -Worked on CharacterCombatStats class
+  --Worked on CharacterStats class
+  --Worked on CharacterEquipment class
+  Created more text files for helping out with the design of Equipment and Characters
+
+Goals: 
+  develop a smart I/O(saving/loading) for Equipment/Items/Characters
+  make basic equipiment (null states) for weapon,shield,armor,leggings,boots,helmet,jewelry in character
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  Using InkScape to remove backgrounds is not 100% acceptable - find more png's
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+_____________________________________________________________________
+
+
+Vers. 0.00225 Alpha
+September 4th, 2015
+
+Worked On: 
+  Hooked up a database to the game
+  Created a wooden knife for a practice item
+
+Goals: 
+  develop a smart I/O(saving/loading) for Equipment/Items/Characters
+  make basic equipiment (null states) for weapon,shield,armor,leggings,boots,helmet,jewelry in character
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I have to come up with a good database system or it will be worthless to use
+  Using InkScape to remove backgrounds is not 100% acceptable - find more png's
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+
+_____________________________________________________________________
+
+
+Vers. 0.0023 Alpha
+September 5th, 2015
+
+Worked On: 
+  Created Blacksmith (Equipment Editor)
+  Created Buttons to go in Blacksmith
+  Scoared the web to find info on textboxes for game without any luck
+  Started Font and Textfield classes
+
+Goals: 
+  develop a smart I/O(saving/loading) for Equipment/Items/Characters
+  make basic equipiment (null states) for weapon,shield,armor,leggings,boots,helmet,jewelry in character
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I have to come up with a good database system or it will be worthless to use
+  Using InkScape to remove backgrounds is not 100% acceptable - find more png's
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+_____________________________________________________________________
+
+Vers. 0.0024 Alpha
+September 8th, 2015
+
+Worked On: 
+  Made textbox class
+  Made textboxnumeric class from textbox
+  Working on textboxdialog and textboxstring
+
+Goals: 
+  develop a smart I/O(saving/loading) for Equipment/Items/Characters
+  make basic equipiment (null states) for weapon,shield,armor,leggings,boots,helmet,jewelry in character
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+  move hover color into button/textfield
+  perhaps make a class that button and textfield come out of
+  make a menu object that can 'tab' focus
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I have to come up with a good database system or it will be worthless to use
+  Using InkScape to remove backgrounds is not 100% acceptable - find more png's
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+_____________________________________________________________________
+
+
+Vers. 0.0025 Alpha
+December 31st, 2015
+
+Next Step:
+  Create a textbox or alter an existing one so that I can insert text for the item name
+  Finish database for armors, shields, boots, gloves, helmet based on jewelry
+  Then I can test to see if I can add rows to tables from inside my program
+  *If this is successful, I can make character and npc editors
+
+Worked On: 
+  Made a new empty database within the game folder called db
+  Added Weapons and Jewelry to the database
+  Made itemlistbox
+  Made dropdownlistbox
+  Updated textbox, numerictextbox, and stringtextbox
+  Worked on layout of Blacksmith (still need to finish, menuX and Y, mItemX and Y, mImageX and Y
+	to keep these menu parts separate)
+
+Goals: 
+  develop a smart I/O(saving/loading) for Equipment/Items/Characters
+  make basic equipiment (null states) for weapon,shield,armor,leggings,boots,helmet,jewelry in character
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+  move hover color into button/textfield
+  perhaps make a class that button and textfield come out of
+  make a menu object that can 'tab' focus
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I have to come up with a good database system or it will be worthless to use
+  Using InkScape to remove backgrounds is not 100% acceptable - find more png's
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+_____________________________________________________________________
+
+
+Vers. 0.00265 Alpha
+January 2nd, 2016
+
+Next Step:
+  Need a database table for each item separate from map placement
+  And then I can make a database for each map that has items/people/wall? placement
+  Ability to Edit and Delete items from the database
+  Add "Are you sure?" & "So and so has been done" Boxes
+  Finish database
+  Then I can test to see if I can add rows to tables from inside my program
+  *If this is successful, I can make character and npc editors
+
+Worked On: 
+  Changed stringtextbox to itemlisttextbox
+  Made a new stringtextbox - ability to insert most of the keyboard and differentiate between upper and lowercase
+  Added alpha,r,g,b to item in Blacksmith
+  Updated the up, down, left, right image buttons and the class they are based on: buttonimage
+  Updated Blacksmith layout - using menu parts, last layout update?
+  Connected the database to the Blacksmith - You can add items(weapons, jewelry) to the database (key: name)
+  
+Goals: 
+  develop a smart I/O(saving/loading) for Equipment/Items/Characters
+  make basic equipiment (null states) for weapon,shield,armor,leggings,boots,helmet,jewelry in character
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  create dialog
+  move hover color into button/textfield
+  perhaps make a class that button and textfield come out of
+  make a menu object that can 'tab' focus
+
+  Class Specific:
+		1) Ex.
+		  a) Ex.
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I have to come up with a good database system or it will be worthless to use
+  Using InkScape to remove backgrounds is not 100% acceptable - find more png's
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+_____________________________________________________________________
+
+
+Vers. 0.0028 Alpha
+January 3rd, 2016
+
+Next Step:
+  Need a database table for each item separate from map placement
+  And then I can make a database for each map that has items/people/wall? placement
+  Ability to Edit and Delete items from the database
+  Add "Are you sure?" & "So and so has been done" Boxes
+  Then I can test to see if I can add rows to tables from inside my program
+  *If this is successful, I can make character and npc editors
+
+Worked On: 
+  updated startmenu enterbtn and equipmentcreator enterbtn
+  fixed an error with buttonimage
+  fixed error with buttonimages in equipmentcreator
+  created an exit and accept button
+  placed exit and accept button into equipmentcreator
+  updated the database for all equipment
+  
+Goals: 
+  develop a smart I/O(saving/loading) for Equipment/Items/Characters
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  perhaps make a class that button and textfield come out of
+  make a menu object that can 'tab' focus
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I have to come up with a good database system or it will be worthless to use
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+_____________________________________________________________________
+
+
+Vers. 0.00285 Alpha
+January 8th, 2016
+
+Next Step:
+  Need a database table for each item separate from map placement
+  And then I can make a database for each map that has items/people/wall? placement
+  Ability to Edit and Delete items from the database
+  Add "Are you sure?" & "So and so has been done" Boxes
+  Then I can test to see if I can add rows to tables from inside my program
+  *If this is successful, I can make character and npc editors
+
+Worked On: 
+  trying to implement a tab feature for the 'area' your mouse is hovering over
+  created focuscontainer class
+  created another class to list items within container and then keeps track of a position
+  *this is conflicting with my mouse over feature
+  *have to determine a "master" focused feature (probably mouse over and tab 2nd)
+  
+Goals: 
+  develop a smart I/O(saving/loading) for Equipment/Items/Characters
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  perhaps make a class that button and textfield come out of
+  make a menu object that can 'tab' focus
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I have to come up with a good database system or it will be worthless to use
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)
+
+_____________________________________________________________________
+
+
+Vers. 0.00295 Alpha
+January 12th, 2016
+
+Next Step:
+  Need a database table for each item separate from map placement
+  And then I can make a database for each map that has items/people/wall? placement
+  Ability to Edit and Delete items from the database
+  Add "Are you sure?" & "So and so has been done" Boxes
+  Then I can test to see if I can add rows to tables from inside my program
+  *If this is successful, I can make character and npc editors
+
+Worked On:
+  Took out TimerBar from textboxdialog
+  Renamed textboxdialog to textboxonelinedialog (this assumes that I will have multi-lined dialog boxes)
+  Make Delete and Edit screen - must load from database and perform correct operations
+  Put imageX and imageY back into database, realized it was for the loading of the image, not placement into map
+  Map000 works again with the implementation of "Wooden Short Sword" into Weapons
+  Edited the save image in equipment creator - it said images were 32 by 32 when they were 24 by 24
+  
+Goals: 
+  develop a smart I/O(saving/loading) for Equipment/Items/Characters
+  make sure states actually pause 
+  create/alter collisions for entering battle
+  create collision <entity> lists for map
+  create chests
+  perhaps make a class that button and textfield come out of
+  <Completed> make a menu object that can 'tab' focus
+  separate equipment from map - then make map item
+  Should equipment have their own ways to render, tho? And just input X and Y coordinates?
+
+Proof of Concept: 
+  *Working Player/NPC/Entity collision
+  *Working Map collision
+  *multi-map(state), 
+  smooth multi-states (map, battle, menu, partymenu),
+  Pause, 
+  'battle' collision
+
+Notes: 
+  I have to come up with a good database system or it will be worthless to use
+  I need to really think about how setting up a party will work
+  Make map tile height/width different from size of player/npc collision object
+  Map Editor - 	Layer 0 = background(displayed)
+		Layer 1 = Entities? (exchanged for game entity?)

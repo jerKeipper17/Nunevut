@@ -1,0 +1,36 @@
+Icon
+Hitpoints	- Hitpoints
+Magic Points	- Magic Points
+Strength 	- Increase Physical Attacks
+Toughness	- Resist Physical Attacks
+Spirit		- Increase Magical Attacks
+Resist		- Resist Magical Attacks
+Evasion 	- Dodge All Attacks
+Speed		- Increase Speed of Attacks/ Movement Speed
+Hit		- Increase Hit Ratio/Critical Ratio
+Luck		- Increase Random Numbers (increased by level)
+
+~Not Used~
+Agility		- Increases Dodge, Speed
+Critical	- Increase Chance of Critical Attacks
+Dexterity	- Increase Speed of Attacks
+
+Weapon/Armor stats
+
+Power (Used with melee and ranged characters/weapons)
+Magic
+Defense
+Magic Defense
+Dodge
+Speed
++ Critical Chance 
+
+Weapon
+Shield
+
+Head
+Chest
+Leggings
+Boots
+
+Jewelry

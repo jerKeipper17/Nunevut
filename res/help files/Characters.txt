@@ -1,0 +1,21 @@
+
+Characters (Playable in Combat) should include:
+
+ Images: pointers to character sprites
+
+ Combat Stats:  Attack, Magic, Defense, Magic Defense, Dodge, 
+               AttackRandomNumber, Attack Speed, Movement Speed?
+
+			Stats: 	CHP, HP, CMP, MP, STR, TOU, SPI, RES, EVA, SPE, HIT, LUK
+       				Experience: CurrentXP, NextLevelXP, Level
+			Equipment: Armor, Boots, Helmet, Jewelry, Leggings, Shield, Weapon
+
+
+
+Groups (Playable on Map) should include:
+
+ Stats: Copper, Silver (100 Copper), Gold (100 Silver, 10,000 copper)
+
+ Inventory: Extra Equipment and Items
+ 
+ Positions: Map, X, Y

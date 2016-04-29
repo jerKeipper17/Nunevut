@@ -1,0 +1,17 @@
+Textfield
+
+*Hover
+*Label
+*Color
+ *Border 1
+ *Border 2
+ *Background
+ *Foreground
+
+Input  Textfield
+
+*Line Border
+*Text Limit
+*Focus Boolean
+
+Output Textfield

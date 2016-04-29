@@ -1,0 +1,11 @@
+Username: theKlois
+Password: ameoba
+
+Right click on Java DB and redirect to db folder
+Open Java DB tab and connect Nunevut
+
+Individual Items will have an identity within the database before being placed
+within the maps
+
+Each map may be connected to specific tables within the database
+this will determine where items, npcs, etc are placed

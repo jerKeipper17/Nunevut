@@ -1,0 +1,25 @@
+This is a work in progress
+Some stats may change in the future
+
+MaxHp		: equip.getMaxHp() + stats.getMHP()
+
+MaxMp		: equip.getMaxMp() + stats.getMMP()
+
+Phys Power	: equip.getPhyPow() + ( (stats.getStr() / 2) + 1)
+
+Phys Defense	: equip.getPhyDef() + ( (stats.getTou() / 2) + 1)
+
+Magi Power	: equip.getMagPow() + ( (stats.getSpr() / 2) + 1)
+
+Magi Def	: equip.getMagDef() + ( (stats.getRes() / 2) + 1)
+
+Dodge		: equip.getDodge() + ( (stats.getEva() / 2) + 1)
+
+Critical	: equip.getCritical() + ( (stats.getHit() / 2) + 1)
+
+AtkSpeed	: equip.getSpeed() + ( (stats.getSpe() / 2) + 1)
+
+AtkRandNum	: Random( (equip.getCritical() / 2) + stats.getLuc() )
+
+MovSpeed	: 
+	

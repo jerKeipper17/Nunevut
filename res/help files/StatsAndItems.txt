@@ -1,0 +1,35 @@
+Icons
+
+*Character Stats
+HP		- Max Hitpoints
+CHP		- Current Hitpoints
+MP		- Max Magic Points
+CMP		- Current Magic Points
+Strength 	- Increase Physical Attacks
+Toughness	- Resist Physical Attacks
+Spirit		- Increase Magical Attacks
+Resist		- Resist Magical Attacks
+Evasion 	- Dodge All Attacks
+Speed		- Increase Speed of Attacks/ Movement Speed
+Hit		- Increase Hit Ratio/Critical Ratio
+Luck		- Increase Random Numbers (Increased by level only)
+
+*Weapon Stats
+MaxHp		- Max HP
+MaxMp		- Max MP
+Phys Power	- Physical Attack Points
+Phys Defense	- Physical Defense Points
+Magi Power	- Magic Attack Points
+Magi Def	- Magic Defense Points
+Dodge		- Dodge Points
+Speed		- Speed Points
+Critical	- Critical/AttackPlus Points
+
+~Not Used~
+Agility		- Increases Dodge, Speed
+Dexterity	- Increase Speed of Attacks
+
+Save your character - save stats, save positiion, save map, save equipment names
+Load your character - load stats, load position, load map, load equipment names, 
+			load equipment from a master list of equipment and then bypass
+			this while in game

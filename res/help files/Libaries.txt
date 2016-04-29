@@ -1,0 +1,12 @@
+jinput
+lwjgl_util
+lwjgl2
+slick
+
+
+In a new Java project:
+Right-Click your project node or go to File>Project Properties and select Libraries
+Add your Slick2D Library , created as instructed above
+Select Run
+On VM Options put the following:
+   -Djava.library.path=<lwjgl-X.X path>/native/<linux|macosx|solaris|windows> 

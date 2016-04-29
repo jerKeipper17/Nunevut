@@ -1,0 +1,160 @@
+Each has:
+
+Name, Image
+
+Buy, Sell
+
+MaxHp
+MaxMp
+Phys Power
+Phys Defense
+Magi Power
+Magi Def
+Dodge
+Speed
+Critical
+
+	  PhysPow PhyDef MagPow MagDef Dodge Speed Critical MaxHp MaxMp
+Weapons :    X		    X			X      X     
+Armor 	:	     X      X     X      X                    X    X
+Boots	:            X            X      X      X
+Gloves	:    X       X            X             X      X 
+Shield	:	     X      X     X
+Helmet	:	     X      X     X                    X      X    X
+Jewelry :    X       X      X     X      X      X      X      X    X
+
+<Unused>
+Leggings:            X      X     X      X      X 
+
+
+-Attack Materials:
+Wood
+Stone
+Bronze
+Iron
+Steel
+Adamantiam
+Mithril
+
+*Swords:
+Dagger
+Dirk
+Shortsword
+Sabre
+Epee
+Spatha
+
+Gladius
+Rapier
+Cutlass
+
+Schimitar
+Falchion
+Katana
+
+Bastard Sword
+Broadsword
+Claymore
+Flamberge
+
+
+-Defense Materials:
+Cloth
+Silk
+Leather
+Hard Leather
+
+Bronze
+Iron
+Steel
+Adamantium
+Mithril
+
+
+*Armor
+Clothing 	(Leather/Cloth/Silk only)
+Vest 		(Leather/Cloth/Silk only)
+Coat 		(Leather/Cloth/Silk only)
+Heavy-Stitch 	(Leather/Cloth/Silk only)
+Chainmail
+HalfPlate
+PlateMail
+
+*Shields
+Small
+Buckler
+Round
+Large
+Kite
+
+*Helmet
+Cap		(Leather/Cloth/Silk only)
+Full		(Leather/Cloth/Silk only)
+Helm
+
+*Leggings
+Clothing  	(Leather/Cloth/Silk only)
+Leggings
+
+*Boots (no Silk)
+Sandals		(Leather/Cloth only)
+Wooden Cogs    	(Wooden only)
+Shoes		
+Boots		
+
+-Special Materials:
+Chrome
+Brass
+Silver
+Gold
+Platinum
+
+Sapphire
+Emerald
+Ruby
+Diamond
+
+*Jewelry
+Necklace
+Armband
+Earring
+Ring
+Amulet
+Talisman
+Seal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

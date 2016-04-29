@@ -1,0 +1,40 @@
+https://pixlr.com/editor/
+Use this to keep and create transparencies.
+Text Size 36
+
+drawFlash = sets your pixels to, i believe, white only
+
+	Can be used when taking damage
+
+drawSheared = displaced
+drawWarped = weird
+
+to get images from a spritesheet
+use 
+<nameOfImage>.getSubImage(xCoor,yCoor, width, height).draw(locX, locY);
+
+g.drawImage(
+ image, 	- path as text
+ x, 		- top left 	X coordinate on map
+ y, 		- top left 	Y coordinate on map
+ x2,		- bottom right 	X coordinate on map
+ y2,		- bottom right  Y coordinate on map
+ picx,  	- top left	X coordinate in file
+ picy,		- top right	Y coordinate in file
+ picx2, 	- bottom right  X coordinate in file
+ picy2, 	- bottom right  Y coordinate in file
+ color mask	- changes many pixels to this color or close to it
+
+Color(r, g, b, alpha)
+Color(0-255, 0-255, 0-255, 0-255)
+
+When doing a color mask:
+ Color.White (255,255,255)	= no mask
+ Color.Transparent		= no image
+ Any other color= masks image with color
+
+ Manipulating the alpha will make things look more and more transparent
+ No Transparency 	(255)
+ Full Transparency 	(0)
+ Shadow			(70)
+ Deep Shadow		(150)
